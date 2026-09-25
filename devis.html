@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demander un devis gratuit — Arbres Cordes &amp; Cie</title>
+<meta name="description" content="Demandez votre devis gratuit pour une taille, un abattage ou un débroussaillage. Réponse rapide d'Arbres Cordes & Cie.">
+<meta name="theme-color" content="#1e3a0a">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-row">
+    <a href="index.html" class="wordmark">
+      <span class="mark">
+        <img src="img/logo-mark.png" alt="Arbres Cordes &amp; Cie" width="82" height="72">
+      </span>
+      <span class="txt">Arbres Cordes &amp; Cie<small>Taille &amp; abattage d'arbres</small></span>
+    </a>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="taille.html">Taille</a></li>
+        <li><a href="abattage.html">Abattage</a></li>
+        <li><a href="debroussaillage.html">Débroussaillage</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="nav-phone" href="tel:+33783542099">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        07 83 54 20 99
+      </a>
+      <a href="devis.html" class="btn btn-primary btn-sm">Devis gratuit</a>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-panel">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="taille.html">Taille</a></li>
+      <li><a href="abattage.html">Abattage</a></li>
+      <li><a href="debroussaillage.html">Débroussaillage</a></li>
+    </ul>
+    <div class="foot">
+      <a class="nav-phone" href="tel:+33783542099">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        07 83 54 20 99
+      </a>
+      <a href="devis.html" class="btn btn-primary">Demander un devis gratuit</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumb">
+      <a href="index.html">Accueil</a>
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m9 6 6 6-6 6"/></svg>
+      <span>Devis gratuit</span>
+    </div>
+    <h1 id="quote-title">Demander un devis gratuit</h1>
+    <p class="lede">Répondez à quelques questions sur votre besoin : je vous recontacte rapidement avec un devis personnalisé.</p>
+  </div>
+</section>
+
+<section class="content-section section-pad">
+  <div class="wrap">
+    <div class="quote-card" data-reveal>
+      <form id="quote-form" class="quote-form" action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+        <!--
+          Étape à faire avant mise en ligne : remplacez la valeur ci-dessous par votre
+          propre clé Web3Forms (gratuite, sans création de compte complexe) :
+          1. Allez sur https://web3forms.com
+          2. Entrez l'adresse e-mail où vous voulez recevoir les demandes
+          3. Copiez la clé reçue par e-mail et collez-la ici à la place de VOTRE_CLE_WEB3FORMS
+        -->
+        <input type="hidden" name="access_key" value="VOTRE_CLE_WEB3FORMS">
+        <input type="hidden" name="subject" id="form-subject" value="Nouvelle demande de devis">
+        <input type="hidden" name="from_name" value="Formulaire du site — Arbres Cordes &amp; Cie">
+        <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off">
+
+        <div class="form-grid">
+          <div class="form-field full">
+            <label for="type">Prestation souhaitée</label>
+            <select id="type" name="Prestation souhaitée" required>
+              <option value="">Sélectionnez une prestation</option>
+              <option value="Taille">Taille</option>
+              <option value="Abattage">Abattage</option>
+              <option value="Débroussaillage">Débroussaillage</option>
+              <option value="Autre / je ne sais pas">Autre / je ne sais pas</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="nom">Nom et prénom</label>
+            <input type="text" id="nom" name="Nom" autocomplete="name" required>
+          </div>
+          <div class="form-field">
+            <label for="tel">Téléphone</label>
+            <input type="tel" id="tel" name="Téléphone" autocomplete="tel" required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="Email" autocomplete="email" required>
+          </div>
+          <div class="form-field">
+            <label for="ville">Ville / adresse du terrain</label>
+            <input type="text" id="ville" name="Ville ou adresse du terrain" autocomplete="address-level2">
+          </div>
+
+          <div class="form-field full">
+            <label for="surface">Surface du terrain (m²) ou nombre d'arbres concernés</label>
+            <input type="text" id="surface" name="Surface ou nombre d'arbres" placeholder="Ex : environ 500 m², ou 2-3 arbres">
+          </div>
+
+          <div class="form-field full">
+            <label for="message">Décrivez votre besoin</label>
+            <textarea id="message" name="Description du besoin" placeholder="Type d'arbres, hauteur approximative, accès au terrain, urgence, contraintes particulières..." required></textarea>
+          </div>
+
+          <div class="form-field full">
+            <label for="photos">Photos (facultatif)</label>
+            <input type="file" id="photos" name="attachment" accept="image/*" multiple>
+            <span class="form-note">Une ou plusieurs photos m'aident à mieux évaluer votre demande.</span>
+          </div>
+        </div>
+
+        <div class="form-submit-row">
+          <button type="submit" class="btn btn-primary">
+            Envoyer ma demande de devis
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <span class="form-note">Réponse sous 24 à 48h.</span>
+        </div>
+      </form>
+
+      <div id="form-success" class="form-alert form-alert-success" hidden>
+        Merci&nbsp;! Votre demande a bien été envoyée. Je vous recontacte rapidement au numéro ou à l'adresse e-mail indiqués.
+      </div>
+      <div id="form-error" class="form-alert form-alert-error" hidden>
+        Une erreur est survenue lors de l'envoi. Vous pouvez réessayer, ou me contacter directement par téléphone ou e-mail ci-dessous.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap inner" data-reveal>
+    <div>
+      <h2>Vous préférez en parler directement&nbsp;?</h2>
+      <p>Je réponds aussi par téléphone ou par e-mail.</p>
+    </div>
+    <div class="cta-buttons">
+      <a href="tel:+33783542099" class="btn btn-outline">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        07 83 54 20 99
+      </a>
+      <a href="mailto:matthiasherrou@orange.fr" class="btn" style="background:var(--forest-900);color:var(--cream-050);">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+        Envoyer un e-mail
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap footer-top">
+    <div class="footer-brand">
+      <div class="wordmark">
+        <span class="mark">
+          <img src="img/logo-mark.png" alt="Arbres Cordes &amp; Cie" width="82" height="72">
+        </span>
+        <span class="txt">Arbres Cordes &amp; Cie<small>Taille &amp; abattage d'arbres</small></span>
+      </div>
+      <p>Arboriste grimpeur et bûcheron diplômé, intervention en sécurité dans la vallée de la Roya, la vallée de la Bévéra, Menton et ses alentours.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Prestations</h4>
+      <ul>
+        <li><a href="taille.html">Taille</a></li>
+        <li><a href="abattage.html">Abattage</a></li>
+        <li><a href="debroussaillage.html">Débroussaillage</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html#services">Mes services</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col contact-col">
+      <h4>Contact</h4>
+      <ul>
+        <li class="row">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-7.58 7-13A7 7 0 0 0 5 9c0 5.42 7 13 7 13Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <span>72 Rue de Turin<br>06540 Breil-sur-Roya</span>
+        </li>
+        <li class="row">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+33783542099">+33 7 83 54 20 99</a>
+        </li>
+        <li class="row">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+          <a href="mailto:matthiasherrou@orange.fr">matthiasherrou@orange.fr</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© <span id="year"></span> Arbres Cordes &amp; Cie — Tous droits réservés.</span>
+    <span>Site réalisé sur mesure.</span>
+  </div>
+</footer>
+
+<a href="tel:+33783542099" class="float-cta" aria-label="Appeler Arbres Cordes & Cie">
+  <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+</a>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="js/main.js?v=2"></script>
+</body>
+</html>
